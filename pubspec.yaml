@@ -1,0 +1,74 @@
+name: nutriti_on_app
+description: "A new Flutter project."
+
+# Prevent accidental publishing to pub.dev
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
+
+# Version and build number
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.5.4 <4.0.0"
+
+# Dependencies required for the application
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Core Dependencies
+  cupertino_icons: ^1.0.8
+  equatable: ^2.0.7
+  dartz: ^0.10.1
+  google_fonts: ^6.2.1
+
+  # State Management
+  flutter_bloc: ^8.1.2
+  provider: ^6.0.5
+
+  # Dependency Injection
+  get_it: ^8.0.3
+
+  # Networking
+  http: ^1.2.2
+  connectivity_plus: ^6.1.1
+
+  # Utilities
+  intl: ^0.20.1
+  animated_text_kit: ^4.2.2
+  shared_preferences: ^2.3.4
+  flutter_secure_storage: ^9.2.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # Linting rules to encourage good coding practices
+  flutter_lints: ^5.0.0
+  flutter_native_splash: ^2.2.17
+
+# Flutter-specific configurations
+flutter:
+  # Ensure Material Icons are included
+  uses-material-design: true
+
+  # Assets (Uncomment and add your assets if needed)
+  # assets:
+  #   - assets/images/
+  #   - assets/icons/
+
+  # Fonts are managed via google_fonts, no need to add here
+  # If you decide to add custom fonts manually, uncomment and configure as needed
+  # fonts:
+  #   - family: Plus Jakarta Sans
+  #     fonts:
+  #       - asset: assets/fonts/PlusJakartaSans-Regular.ttf
+  #       - asset: assets/fonts/PlusJakartaSans-Bold.ttf
+  #         weight: 700
+  #       - asset: assets/fonts/PlusJakartaSans-Italic.ttf
+  #         style: italic
+
+flutter_native_splash:
+  color: "#42C83C" # Warna latar belakang Splash Screen (sesuaikan dengan AppColors.primary)
+  android: true
+  ios: true
+  web: false # Nonaktifkan jika tidak diperlukan
